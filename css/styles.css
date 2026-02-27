@@ -570,6 +570,39 @@ p:last-child {
   margin-top: var(--space-md);
 }
 
+.course-section__link {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-accent-hover);
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.course-section__link:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: var(--space-md);
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
 .course-section__placeholder {
   background-color: var(--color-accent-light);
   border: 1px dashed var(--color-border);
